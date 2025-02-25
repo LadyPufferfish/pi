@@ -1,0 +1,31 @@
+html {
+    color: white;
+}
+
+body {
+    font-family: "Roboto Mono", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #1f1f1f;
+    overflow: hidden;
+}
+
+p {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.sliding-gradient {
+    font-weight: bold;
+    background: linear-gradient(90deg, #9b00d8, #6600b9, #9b00d8);
+    background-size: 300% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: infiniteSlide 5s infinite alternate-reverse;
+}
+
+@keyframes infiniteSlide {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 200% 50%; }
+}
